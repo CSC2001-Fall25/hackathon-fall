@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CSC2001 Mini Hackathon</title>
-  <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Recipe Search </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1>Mini Hackathon</h1>
-    <p>Build something with HTML + CSS + JS + an API!</p>
+    <header>
+        <h1> Chef’s Mini Recipe Search – Delicious Meals Await!</h1>
+        <p id="fun-msg">Search a recipe or get a random chef's surprise!</p>
+    </header>
 
-    <section id="app">
-      <button id="actionBtn">Get Data</button>
-      <pre id="output">Click the button to fetch data…</pre>
-    </section>
-  </main>
+    <main>
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="Search recipes...">
+            <button id="search-btn">Search</button>
+            <button id="random-btn">Random Recipe</button>
+        </section>
 
-  <script src="./script.js"></script>
+        <section id="results" class="results"></section>
+    </main>
+
+    <footer>
+        <p>Mini Recipe App | Made with HTML, CSS, JavaScript, and API</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

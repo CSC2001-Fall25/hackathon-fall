@@ -7,20 +7,50 @@ body {
     color: #333;
 }
 
+/* Header styling */
 header {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 3rem 1rem; /* increased bottom padding to 3rem */
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    color: #fff;
+    border-bottom: 4px solid #d2691e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background 0.5s ease;
+    margin-bottom: 25px; /* adds space below the header */
+    border-bottom: 1px solid #ddd;
+}
+
+header:hover {
+    background: linear-gradient(90deg, #ff5e62, #ff9966);
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #d2691e;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s forwards;
 }
 
 header #fun-msg {
     font-style: italic;
-    color: #ff4500;
+    color: #ffe4b5;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeInDown 1.2s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Header animations */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Search section */
